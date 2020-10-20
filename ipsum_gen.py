@@ -14,6 +14,6 @@ with open('ipsum_txt') as ipsum_original:
     items = ipsum_original.read().split()
 
     for n in range(paragraphs):
-        music_text = list(map(musicarize, items))
+        music_text = list( map(musicarize, items))
         with open('music_ipsum.txt', 'a') as ipsum_music:
             ipsum_music.write(' '.join(music_text) + '\n\n')
